@@ -10,6 +10,10 @@ const selfCheckout = {
 
     addToBasket: function(item) {
         this.basket.push(item);
+    },
+
+    calculateTotal: function() {
+        return this.basket.reduce((total, item) => total += item.price, 0);
     }
     
 };
