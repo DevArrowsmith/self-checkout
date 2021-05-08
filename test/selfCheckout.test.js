@@ -25,4 +25,13 @@ describe("selfCheckout", () => {
         selfCheckout.addToBasket(banana);
         expect(selfCheckout.calculateTotal()).toBe(18);
     })
+
+    test("removes one instance of an item from the basket", () => {
+        selfCheckout.addToBasket(kiwi);
+        selfCheckout.addToBasket(pineapple);
+        selfCheckout.addToBasket(pineapple);
+        expect(selfCheckout.basket).toEqual([kiwi, pineapple, pineapple]);
+        selfCheckout.removeFromBasket(pineapple);
+        expect(selfCheckout.basket).toEqual([kiwi, pineapple]);
+    })
 });
