@@ -12,4 +12,3 @@ The aim is to fulfil the following user story using TDD:
 4. As a user, I would like to be able to remove an item from my basket.
 
 ---
-

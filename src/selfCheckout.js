@@ -2,8 +2,14 @@ const {orange, pineapple, kiwi, apple, banana, catalogue} = require("../data/sel
 
 const selfCheckout = {
 
+    basket: [],
+
     scanBarcode: function(barcode) {
         return catalogue.find(item => item.barcode === barcode);
+    },
+
+    addToBasket: function(item) {
+        this.basket.push(item);
     }
     
 };
