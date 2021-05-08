@@ -4,7 +4,7 @@
 
 This repo is a Test-Driven Development (TDD) exercise.
 
-The aim is to fulfil the following user story using TDD:
+The aim was to fulfil the following user story using TDD:
 
 >1. As a user, I would like to be able to scan an item using barcode so its details can be found from products list (test data).
 >2. As a user, I would like to be able to add an item to basket.
@@ -35,7 +35,7 @@ The aim is to fulfil the following user story using TDD:
 This repo can be installed locally.
 
 1. Clone [this repo](https://github.com/DevArrowsmith/self-checkout) (Here's [a guide on cloning repos](https://docs.github.com/en/enterprise/2.13/user/articles/cloning-a-repository)).
-2. In the terminal navigate to the root directory of the clonedrepo.
+2. In the terminal navigate to the root directory of the cloned repo.
 3. Run `npm i` to install node packages including Jest.
 
 ---
