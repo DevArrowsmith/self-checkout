@@ -12,6 +12,10 @@ const selfCheckout = {
         this.basket.push(item);
     },
 
+    removeFromBasket: function(item) {
+        this.basket.splice(this.basket.findIndex(basketItem => basketItem.name === item), 1);
+    },
+
     calculateTotal: function() {
         return this.basket.reduce((total, item) => total += item.price, 0);
     }
