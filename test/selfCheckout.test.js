@@ -18,4 +18,11 @@ describe("selfCheckout", () => {
         selfCheckout.addToBasket(pineapple);
         expect(selfCheckout.basket).toEqual([kiwi, pineapple]);
     });
+
+    test("returns the total price of all items in the basket", () => {
+        selfCheckout.addToBasket(orange);
+        selfCheckout.addToBasket(apple);
+        selfCheckout.addToBasket(banana);
+        expect(selfCheckout.calculateTotal()).toBe(18);
+    })
 });
